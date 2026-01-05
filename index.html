@@ -1,91 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bunny Breakfast Shop (2D+3D)</title>
-    <!-- 引入Unity导出的TemplateData样式 -->
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <title>Bunny Project</title>
     <style>
-        body {
-            margin: 0;
-            padding: 20px;
-            background-color: #fef3e6;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .storyboard-section {
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-        .storyboard-img {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .video-section {
-            max-width: 800px;
-            margin: 30px auto;
-        }
-        video {
-            max-width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-        .game-section {
-            max-width: 960px;
-            margin: 30px auto;
-        }
-        #unityContainer {
-            width: 960px;
-            height: 600px;
-            margin: 0 auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-        }
-        h1 {
-            color: #d27954;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
+        body { text-align: center; font-family: Arial; padding: 20px; }
+        .menu { display: flex; justify-content: space-around; margin-top: 50px; }
+        .item { border: 1px solid #ccc; padding: 20px; border-radius: 10px; width: 30%; }
+        a { text-decoration: none; color: blue; font-weight: bold; }
     </style>
 </head>
 <body>
-    <h1>Bunny Breakfast Shop</h1>
-
-    <!-- 2D故事板区域 -->
-    <div class="storyboard-section">
-        <h2>Storyboard: Bunny Breakfast Shop Tasks</h2>
-        <img src="bunny_storyboard.png" class="storyboard-img" alt="Bunny Breakfast Shop Storyboard">
+    <h1>欢迎来到小兔的游戏项目</h1>
+    <div class="menu">
+        <div class="item">
+            <h3>2D 分镜</h3>
+            <a href="bunny_storyboard.png" target="_blank">查看图片</a>
+        </div>
+        <div class="item">
+            <h3>项目视频</h3>
+            <a href="bunny_video.mp4" target="_blank">播放视频</a>
+        </div>
+        <div class="item">
+            <h3>3D 游戏</h3>
+            <a href="Build/index.html">开始游戏</a>
+        </div>
     </div>
-
-    <!-- 2D视频区域 -->
-    <div class="video-section">
-        <h2>Story Animation: Bunny's Breakfast Task</h2>
-        <video controls>
-            <source src="bunny_video.mp4" type="video/mp4">
-            Your browser does not support video playback. Please try a different browser.
-        </video>
-    </div>
-
-    <!-- 3D游戏区域（匹配当前Build文件夹的文件） -->
-    <div class="game-section">
-        <h2>Start the Game: Help the Bunny Choose Breakfast</h2>
-        <p>Follow the task prompts and choose the corresponding food!</p>
-        <!-- 引入Unity导出的加载器和游戏容器 -->
-        <div id="unityContainer"></div>
-        <script src="Build/Build.loader.js"></script>
-        <script>
-            var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Build.json", {
-                onProgress: function(progress) {
-                    document.getElementById('loadProgress').innerText = `Game Loading: ${Math.round(progress * 100)}%`;
-                }
-            });
-        </script>
-        <p id="loadProgress">Game Loading: 0%</p>
-    </div>
-
-    <!-- 引入TemplateData的脚本 -->
-    <script src="TemplateData/UnityProgress.js"></script>
 </body>
 </html>
