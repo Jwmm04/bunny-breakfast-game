@@ -2,30 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bunny Game Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Game Project Showcase</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background: #f4f7f6; padding: 50px; }
-        .container { display: flex; justify-content: center; gap: 20px; margin-top: 30px; }
-        .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); width: 200px; text-decoration: none; color: #333; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .btn { display: inline-block; margin-top: 15px; padding: 8px 15px; background: #3498db; color: white; border-radius: 5px; text-decoration: none; }
+        body { text-align: center; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7f6; padding: 40px; color: #333; }
+        h1 { color: #2c3e50; margin-bottom: 40px; }
+        .menu { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .item { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); width: 250px; transition: 0.3s; }
+        .item:hover { transform: translateY(-10px); }
+        .item h3 { color: #3498db; }
+        .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
     </style>
 </head>
 <body>
-    <h1>🐰 Bunny Breakfast Game Project</h1>
-    <div class="container">
-        <a href="bunny_storyboard.png" target="_blank" class="card">
+    <h1>🐰 Bunny Breakfast Project</h1>
+    <div class="menu">
+        <div class="item">
             <h3>2D Storyboard</h3>
-            <div class="btn">View</div>
-        </a>
-        <a href="bunny_video.mp4" target="_blank" class="card">
+            <p>Visual concept design</p>
+            <a href="bunny_storyboard.png" class="btn" target="_blank">View PNG</a>
+        </div>
+        <div class="item">
             <h3>Project Video</h3>
-            <div class="btn">Watch</div>
-        </a>
-        <a href="game.html" class="card">
+            <p>Gameplay demo</p>
+            <a href="bunny_video.mp4" class="btn" target="_blank">Watch MP4</a>
+        </div>
+        <div class="item">
             <h3>3D Game</h3>
-            <div class="btn">Play Now</div>
-        </a>
+            <p>WebGL Interactive</p>
+            <a href="game.html" class="btn">Play Now</a>
+        </div>
     </div>
 </body>
 </html>
