@@ -1,28 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Bunny Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bunny Game Project Showcase</title>
     <style>
-        body { text-align: center; font-family: Arial; padding: 20px; }
-        .menu { display: flex; justify-content: space-around; margin-top: 50px; }
-        .item { border: 1px solid #ccc; padding: 20px; border-radius: 10px; width: 30%; }
-        a { text-decoration: none; color: blue; font-weight: bold; }
+        body { text-align: center; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7f6; padding: 40px; color: #333; }
+        h1 { color: #2c3e50; margin-bottom: 40px; }
+        .menu { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        .item { background: white; border: none; padding: 30px; border-radius: 15px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: 0.3s; }
+        .item:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .item h3 { color: #3498db; margin-top: 0; }
+        .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .btn:hover { background-color: #2980b9; }
     </style>
 </head>
 <body>
-    <h1>欢迎来到小兔的游戏项目</h1>
+    <h1>Bunny Game Project Showcase</h1>
     <div class="menu">
         <div class="item">
-            <h3>2D 分镜</h3>
-            <a href="bunny_storyboard.png" target="_blank">查看图片</a>
+            <h3>2D Storyboard</h3>
+            <p>Visual concept and design</p>
+            <a href="bunny_storyboard.png" class="btn" target="_blank">View Image</a>
         </div>
+        
         <div class="item">
-            <h3>项目视频</h3>
-            <a href="bunny_video.mp4" target="_blank">播放视频</a>
+            <h3>Demo Video</h3>
+            <p>Gameplay preview</p>
+            <a href="bunny_video.mp4" class="btn" target="_blank">Watch Video</a>
         </div>
+
         <div class="item">
-            <h3>3D 游戏</h3>
-            <a href="Build/index.html">开始游戏</a>
+            <h3>3D Game</h3>
+            <p>Play directly in browser</p>
+            <a href="Build/index.html" class="card">Play Now</a>
         </div>
     </div>
 </body>
