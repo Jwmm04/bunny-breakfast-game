@@ -3,65 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bunny Game Project Showcase</title>
+    <title>Bunny Breakfast Game Project</title>
     <style>
-        body { text-align: center; font-family: 'Segoe UI', Arial, sans-serif; background-color: #f4f7f6; padding: 40px; color: #333; }
-        h1 { color: #2c3e50; margin-bottom: 40px; }
-        .menu { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-<<<<<<< HEAD
-        .item { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); width: 250px; transition: 0.3s; }
-        .item:hover { transform: translateY(-10px); }
-        .item h3 { color: #3498db; }
-        .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f2f5; margin: 0; padding: 40px; display: flex; flex-direction: column; align-items: center; }
+        h1 { color: #1a1a1a; margin-bottom: 30px; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 900px; width: 100%; }
+        .card { background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center; text-decoration: none; color: inherit; transition: 0.3s; border: 1px solid #eee; }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 8px 25px rgba(0,0,0,0.12); border-color: #3498db; }
+        .tag { display: inline-block; background: #e7f3ff; color: #3498db; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; font-weight: bold; margin-bottom: 15px; }
+        h3 { margin: 10px 0; color: #2c3e50; }
+        p { font-size: 0.9em; color: #666; line-height: 1.5; }
+        .btn { margin-top: 15px; display: inline-block; padding: 8px 20px; background: #3498db; color: white; border-radius: 5px; font-weight: bold; }
     </style>
 </head>
 <body>
-    <h1>🐰 Bunny Breakfast Project</h1>
-    <div class="menu">
-        <div class="item">
-            <h3>2D Storyboard</h3>
-            <p>Visual concept design</p>
-            <a href="bunny_storyboard.png" class="btn" target="_blank">View PNG</a>
-=======
-        .item { background: white; border: none; padding: 30px; border-radius: 15px; width: 250px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: 0.3s; }
-        .item:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
-        .item h3 { color: #3498db; margin-top: 0; }
-        .btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #3498db; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-        .btn:hover { background-color: #2980b9; }
-    </style>
-</head>
-<body>
-    <h1>Bunny Game Project Showcase</h1>
-    <div class="menu">
-        <div class="item">
-            <h3>2D Storyboard</h3>
-            <p>Visual concept and design</p>
-            <a href="bunny_storyboard.png" class="btn" target="_blank">View Image</a>
->>>>>>> af0104bc2b8174e6818f180ab8068b47b1a5736d
-        </div>
-        
-        <div class="item">
-<<<<<<< HEAD
-            <h3>Project Video</h3>
-            <p>Gameplay demo</p>
-            <a href="bunny_video.mp4" class="btn" target="_blank">Watch MP4</a>
-=======
-            <h3>Demo Video</h3>
-            <p>Gameplay preview</p>
-            <a href="bunny_video.mp4" class="btn" target="_blank">Watch Video</a>
->>>>>>> af0104bc2b8174e6818f180ab8068b47b1a5736d
-        </div>
 
-        <div class="item">
-            <h3>3D Game</h3>
-<<<<<<< HEAD
-            <p>WebGL Interactive</p>
-            <a href="game.html" class="btn">Play Now</a>
-=======
-            <p>Play directly in browser</p>
-            <a href="Build/index.html" class="card">Play Now</a>
->>>>>>> af0104bc2b8174e6818f180ab8068b47b1a5736d
-        </div>
+    <h1>🐰 Bunny Breakfast Project</h1>
+
+    <div class="portfolio-grid">
+        <a href="bunny_storyboard.png" target="_blank" class="card">
+            <span class="tag">ARTWORK</span>
+            <h3>2D Storyboard</h3>
+            <p>View the visual concept and character designs for the project.</p>
+            <div class="btn">View Image</div>
+        </a>
+
+        <a href="bunny_video.mp4" target="_blank" class="card">
+            <span class="tag">VIDEO</span>
+            <h3>Project Demo</h3>
+            <p>Watch the gameplay trailer and demonstration video.</p>
+            <div class="btn">Watch Video</div>
+        </a>
+
+        <a href="game.html" class="card">
+            <span class="tag">3D GAME</span>
+            <h3>Interactive Game</h3>
+            <p>Play the WebGL version of the bunny game directly in your browser.</p>
+            <div class="btn">Play Now</div>
+        </a>
     </div>
+
 </body>
 </html>
